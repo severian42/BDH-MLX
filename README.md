@@ -370,7 +370,7 @@ model.load_weights(list(checkpoint.items()))
 
 ### Training Speed
 
-Measured on M2 Max (64GB RAM):
+Measured on M4 (64GB RAM):
 
 | Configuration | Tokens/sec | Memory | Time to 1000 steps |
 |--------------|-----------|--------|-------------------|
