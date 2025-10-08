@@ -75,16 +75,16 @@ Input (B, T) → Embedding (B, T, D) → [BDH Layers x6] → Output (B, T, vocab
 
 Each BDH Layer:
 ┌─────────────────────────────────────────────────────────────┐
-│ x → encoder → ReLU → Attention(RoPE) → encoder_v → ReLU    │
-│                        ↓                      ↓              │
-│                   x_sparse               y_sparse            │
-│                        └──────── × ─────────┘                │
-│                              ↓                                │
-│                         xy_sparse                            │
-│                              ↓                                │
-│                          decoder                             │
-│                              ↓                                │
-│                       LayerNorm(x + y)                       │
+│ x → encoder → ReLU → Attention(RoPE) → encoder_v → ReLU     │
+│                        ↓                      ↓             │
+│                   x_sparse               y_sparse           │
+│                        └──────── × ─────────┘               │
+│                                  ↓                          │
+│                              xy_sparse                      │
+│                                  ↓                          │
+│                               decoder                       │
+│                                  ↓                          │
+│                           LayerNorm(x + y)                  │
 └─────────────────────────────────────────────────────────────┘
 ```
 
@@ -116,13 +116,13 @@ Unlike Transformers where each layer has `L × (W_q, W_k, W_v, W_o, W_ffn1, W_ff
 ### Install Dependencies
 
 ```bash
-pip install mlx>=0.21.0 numpy datasets huggingface-hub
+pip install mlx numpy datasets huggingface-hub
 ```
 
 Or use the provided requirements file:
 
 ```bash
-pip install -r requirements-mlx.txt
+pip install -r requirements.txt
 ```
 
 ### Verify Installation
