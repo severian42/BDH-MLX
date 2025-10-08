@@ -277,11 +277,11 @@ v_rot = v_rot_parts.reshape(v.shape)
 
 The MLX implementation preserves **exact mathematical equivalence** with PyTorch:
 
-1. ✅ **Same computation graph** - all operations identical
-2. ✅ **Same parameter shapes** - verified via parameter counting
-3. ✅ **Same initialization** - both use `normal(std=0.02)`
-4. ✅ **Same forward pass** - tensor shapes match at every layer
-5. ✅ **Same loss computation** - cross-entropy with same reduction
+1. **Same computation graph** - all operations identical
+2. **Same parameter shapes** - verified via parameter counting
+3. **Same initialization** - both use `normal(std=0.02)`
+4. **Same forward pass** - tensor shapes match at every layer
+5. **Same loss computation** - cross-entropy with same reduction
 
 **Key insight**: The differences are purely **API translations**, not architectural changes. The underlying mathematics, tensor operations, and information flow are preserved exactly.
 
