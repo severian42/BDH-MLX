@@ -647,7 +647,7 @@ See `LICENSE.md` for details.
 - **Original Paper**: https://doi.org/10.48550/arXiv.2509.26507
 - **MLX Documentation**: https://ml-explore.github.io/mlx/
 - **MLX Examples**: https://github.com/ml-explore/mlx-examples
-- **Original PyTorch Implementation**: [Link to original repo]
+- **Original PyTorch Implementation**: https://github.com/pathwaycom/bdh
 
 ---
 
